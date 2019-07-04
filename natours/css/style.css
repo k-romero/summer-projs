@@ -131,6 +131,12 @@ body {
   .btn--white::after {
     background-color: #fff; }
 
+.btn--green {
+  background-color: #7ed56f;
+  color: #fff; }
+  .btn--green::after {
+    background-color: #7ed56f; }
+
 .btn::after {
   content: "";
   display: inline-block;
@@ -366,4 +372,5 @@ body {
 .section-tours {
   background-color: #f7f7f7;
   padding: 25rem 0;
-  margin-top: -10rem; }
+  margin-top: -10rem;
+  text-align: center; }
