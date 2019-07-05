@@ -43,6 +43,7 @@
             background-color: $color-primary-light;
         }
     }
+
     
     &::after {
         content: "";
@@ -88,4 +89,12 @@
         transform: translateY(0); 
     }
 
+}
+
+.btn-skinny{
+    &:link,
+     &:visited{
+         padding: 1rem 2rem;
+         width: 100%;
+     }
 }
