@@ -159,13 +159,17 @@ body {
   animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards; }
 
+.btn-skinny:link, .btn-skinny:visited {
+  padding: 1rem 2rem;
+  width: 100%; }
+
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
   color: #55c57a;
   display: inline-block;
   text-decoration: none;
   border-bottom: 1px solid #55c57a;
-  padding: 3px;
+  padding: 5px 1rem;
   transition: all .2s; }
 
 .btn-text:hover {
@@ -178,9 +182,18 @@ body {
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
-.btn-skinny:link, .btn-skinny:visited {
-  padding: 1rem 2rem;
-  width: 100%; }
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .15; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .card {
   position: relative;
@@ -337,6 +350,52 @@ body {
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: 1.6rem;
+  transform: skewX(-12deg);
+  transition: all .5s; }
+  .story__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg);
+    position: relative; }
+  .story__image {
+    height: 100%;
+    transform: translateX(-3.8rem) scale(1.4);
+    transition: all .5s; }
+  .story__text {
+    transform: skewX(12deg); }
+  .story__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s;
+    backface-visibility: hidden; }
+  .story:hover .story__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .story:hover .story__image {
+    transform: translateX(-3.8rem) scale(1);
+    filter: blur(3px) brightness(80%); }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right, rgba(126, 213, 111, 0.808), rgba(40, 180, 133, 0.794)), url(../img/plant-card-back-rubberplant.jpg);
@@ -400,5 +459,9 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 25rem 0;
+  padding: 25rem 0 15rem 0;
   margin-top: -10rem; }
+
+.section-stories {
+  padding: 15rem 0;
+  position: relative; }
