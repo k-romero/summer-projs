@@ -1,0 +1,53 @@
+svg {
+    width: 150px;
+    height: 150px;
+
+    &:hover .st0{
+        stroke-dasharray: 200; 
+
+    }
+    
+  
+}
+
+
+.st0 {
+  stroke: rgba($color-white, 0.5);
+  fill: none;
+  opacity: 0;
+  
+  stroke-width: 6px;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:10;
+  stroke-dasharray: 1300;
+  stroke-dashoffset: 1300;
+  transition: all 2s ease;
+  animation: dash 2s linear forwards;
+  transform: translateX(0px) scale(.9);
+  
+  &:hover{
+    fill: $color-primary-light;
+  }
+
+  &-k:hover {
+    transform: translateX(0px) scale(1);
+    // stroke-dasharray: 800;
+  }
+
+  &-r:hover{
+    transform: translateX(-30px) scale(1);
+    // stroke-dasharray: 200;
+  }
+}
+
+
+
+@keyframes dash {
+  to {
+      stroke-dashoffset: 0;
+      opacity: 1;
+      stroke: rgba($color-white, 1);
+      stroke-width: 10px;
+  }
+}

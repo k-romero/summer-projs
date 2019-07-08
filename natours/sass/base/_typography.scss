@@ -10,13 +10,13 @@ body {
     color: $color-white;
     text-transform: uppercase;
     backface-visibility: hidden;
-    margin-bottom: 6rem;
+    margin-bottom:1rem;
 
     &--main {
         display: block;
-        font-size: 6rem;
+        font-size: 2rem;
         font-weight: 400;
-        letter-spacing: 3.5rem;
+        letter-spacing: 1rem;
     
         /* Animation Properties */
     
@@ -35,6 +35,13 @@ body {
     
         animation: moveInRight 1s ease-out;
     }
+}
+
+.heading-body-copy {
+    max-width: 50%;
+    font-size: $body-copy-font-size;
+    color: $color-white;
+    margin-bottom: 2rem;
 }
 
 .heading-secondary {

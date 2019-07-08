@@ -62,6 +62,13 @@
         animation: moveInBottom .5s ease-out .75s;
         animation-fill-mode: backwards;
     }
+    &--small {
+        &:link,
+        &:visited{
+         padding: 1rem 2rem;
+         border-radius: 0 100px 100px 0;
+     }
+    }
     
 }
 
@@ -72,6 +79,7 @@
          width: 100%;
      }
 }
+
 
 .btn-text {
     &:link,

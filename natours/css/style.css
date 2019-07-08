@@ -50,12 +50,12 @@ body {
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 6rem; }
+  margin-bottom: 1rem; }
   .heading-primary--main {
     display: block;
-    font-size: 6rem;
+    font-size: 2rem;
     font-weight: 400;
-    letter-spacing: 3.5rem;
+    letter-spacing: 1rem;
     /* Animation Properties */
     animation-name: moveInLeft;
     animation-duration: 1s;
@@ -67,6 +67,12 @@ body {
     letter-spacing: 1.75rem;
     /* Animation Properties */
     animation: moveInRight 1s ease-out; }
+
+.heading-body-copy {
+  max-width: 50%;
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: 2rem; }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -158,6 +164,10 @@ body {
 .btn--animated {
   animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards; }
+
+.btn--small:link, .btn--small:visited {
+  padding: 1rem 2rem;
+  border-radius: 0 100px 100px 0; }
 
 .btn-skinny:link, .btn-skinny:visited {
   padding: 1rem 2rem;
@@ -350,6 +360,42 @@ body {
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  color: inherit;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #55c57a; }
+  .form__input:focus:invalid {
+    border-bottom: 3px solid #ff7730; }
+  .form__input::-webkit-input-placeholder {
+    color: #999; }
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: .7rem;
+  display: block;
+  transition: all .3s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
+
 .story {
   width: 75%;
   margin: 0 auto;
@@ -396,6 +442,39 @@ body {
     transform: translateX(-3.8rem) scale(1);
     filter: blur(3px) brightness(80%); }
 
+svg {
+  width: 150px;
+  height: 150px; }
+  svg:hover .st0 {
+    stroke-dasharray: 200; }
+
+.st0 {
+  stroke: rgba(255, 255, 255, 0.5);
+  fill: none;
+  opacity: 0;
+  stroke-width: 6px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1300;
+  stroke-dashoffset: 1300;
+  transition: all 2s ease;
+  animation: dash 2s linear forwards;
+  transform: translateX(0px) scale(0.9); }
+  .st0:hover {
+    fill: #7ed56f; }
+  .st0-k:hover {
+    transform: translateX(0px) scale(1); }
+  .st0-r:hover {
+    transform: translateX(-30px) scale(1); }
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+    opacity: 1;
+    stroke: white;
+    stroke-width: 10px; } }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right, rgba(126, 213, 111, 0.808), rgba(40, 180, 133, 0.794)), url(../img/plant-card-back-rubberplant.jpg);
@@ -406,16 +485,13 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
   .header__logo-box {
     position: absolute;
-    top: 4rem;
-    left: 4rem; }
-  .header__logo {
-    height: 3.5rem; }
+    top: 8%;
+    left: 5%; }
   .header__text-box {
     position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
+    top: 25%;
+    left: 5%;
+    text-align: left; }
 
 .row {
   max-width: 114rem;
