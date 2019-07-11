@@ -39,6 +39,12 @@ svg {
     transform: translateX(-30px) scale(1);
     // stroke-dasharray: 200;
   }
+
+  &--dark {
+    &:hover {
+      fill: $color-grey-dark;
+    }
+  }
 }
 
 
