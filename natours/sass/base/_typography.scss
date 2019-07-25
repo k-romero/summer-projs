@@ -38,10 +38,11 @@ body {
 }
 
 .heading-body-copy {
-    max-width: 50%;
+    max-width: 50rem;
     font-size: $body-copy-font-size;
     color: $color-white;
     margin-bottom: 2rem;
+    letter-spacing: .1rem;
 }
 
 .heading-secondary {

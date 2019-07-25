@@ -3,9 +3,9 @@
     background-image: linear-gradient(
         to right,
         rgba($color-primary-light, 0.808),
-        rgba($color-primary-dark, 0.794)) ;
-    // url(../img/plant-card-back-rubberplant.jpg);
-    background-size: cover;
+        rgba($color-primary-dark, 0.794)),
+    url(../img/grid1.png);
+    background-size: contain;
     background-position: top;
     position: relative;
 
@@ -14,8 +14,8 @@
 
     &__logo-box{
         position: absolute;
-        top: 8%;
-        left: 5%;
+        top: 6rem;
+        left: 6rem;
         // transform: translate(-50% , -50%);
     }
 
@@ -25,8 +25,8 @@
     
     &__text-box {
         position: absolute;
-        top: 25%;
-        left: 5%;
+        top: 18rem;
+        left: 6rem;
         text-align: left;
     }
 
