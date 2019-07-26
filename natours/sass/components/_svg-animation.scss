@@ -13,7 +13,7 @@ svg {
 
 
 .st0 {
-  stroke: rgba($color-orange, 0.5);
+  stroke: rgba($color-grey-dark-3, 0.5);
   fill: none;
   opacity: 0;
   
@@ -28,7 +28,7 @@ svg {
   transform: translateX(0px) scale(.9);
   
   &:hover{
-    fill: $color-primary-light;
+    fill: $color-orange;
   }
 
   &-k:hover {
@@ -54,7 +54,7 @@ svg {
   to {
       stroke-dashoffset: 0;
       opacity: 1;
-      stroke: rgba($color-orange, 1);
+      stroke: rgba($color-grey-dark-3, 1);
       stroke-width: 10px;
   }
 }

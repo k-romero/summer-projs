@@ -1,5 +1,6 @@
 .header {
     height: 95vh;
+    // max-width: 50vw;
     background-image: linear-gradient(
         to right,
         rgba($color-primary-light, 0.808),
@@ -8,15 +9,16 @@
     background-size: contain;
     background-position: top;
     position: relative;
+    
 
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    // clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
 
     &__logo-box{
         position: absolute;
         top: 6rem;
         left: 6rem;
-        // transform: translate(-50% , -50%);
+        
     }
 
     // &__logo {
@@ -25,7 +27,7 @@
     
     &__text-box {
         position: absolute;
-        top: 18rem;
+        top: 20rem;
         left: 6rem;
         text-align: left;
     }

@@ -29,20 +29,24 @@ body {
         display: block;
         font-size: $default-font-size;
         font-weight: 400;
-        letter-spacing: 1rem;
+        // letter-spacing: 1rem;
+        color: $color-grey-light;
     
         /* Animation Properties */
     
-        animation: moveInRight 1s ease-out;
+        animation: moveInRight 2s ease;
     }
 }
 
 .heading-body-copy {
     max-width: 50rem;
     font-size: $body-copy-font-size;
-    color: $color-white;
-    margin-bottom: 2rem;
+    color: $color-grey-light;
     letter-spacing: .1rem;
+
+    /* Animation Properties */
+
+    animation: fadeIn 1s ease-out;
 }
 
 .heading-secondary {

@@ -42,6 +42,15 @@
         }
     }
 
+    &--grey {
+        background-color: $color-grey-dark-3;
+        color: $color-grey-dark;
+       
+        &::after {
+            background-color: $color-grey-dark-3;
+        }
+    }
+
     &--green {
         background-color: $color-primary;
         color: $color-white;
@@ -72,14 +81,16 @@
     &--small {
         &:link,
         &:visited{
-         padding: 1rem 2rem;
-         border-radius: 0 10rem 10rem 0;
+         padding: 1rem 3rem 1rem 2rem;
+         border-radius: 0;
+         clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
          transition: all .6s ease;
          &::after {
             border-radius: 0 10rem 10rem 0;
          }
          &:hover {
              padding-left: 6rem;
+             color: $color-orange;
          }
      }
     }
